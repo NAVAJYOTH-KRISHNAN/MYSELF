@@ -2,11 +2,12 @@
   <head>
     <title>NAVAJYOTH KRISHNAN D</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./2.png"/>
+    <link rel="icon" href="./2.png">
   </head>
   <body>
     <div class="main">
       <div class="screen">
+        <div class="noise"></div>
         <img src="./scanlines.png" id="scan" class="noselect" />
         <img src="./bezel.png" id="bezel" class="noselect" />
         <div class="content">
@@ -42,5 +43,10 @@
         </div>
       </div>
     </div>
+    <script>
+      setTimeout(() => {
+        document.querySelector('.noise').classList.add('hidden');
+      }, 1500);
+    </script>
   </body>
 </html>
