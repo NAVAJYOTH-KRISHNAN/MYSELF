@@ -1,43 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-body{
+
+body {
     background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.screen{
+
+.screen {
     position: relative;
-    width: 1500px;;
+    width: 1500px;
     height: 730px;
     background-color: green;
 }
+
 #scan {
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     left: 0;
     pointer-events: none;
-    opacity: 65%;
+    opacity: 75%;
 }
-#bezel{
+
+#bezel {
     position: absolute;
     width: 100%;
     height: 100%;
-    top:0;
+    top: 0;
     left: 0;
     pointer-events: none;
 }
-.content{
+
+.noise {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('./whitenoise.gif') repeat;
+    opacity: 0.6;
+    pointer-events: none;
+    animation: noise 0.2s steps(5, end) infinite;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes noise {
+    0%, 100% {
+        clip: rect(0, 100%, 0, 0);
+    }
+    10% {
+        clip: rect(10%, 100%, 10%, 0);
+    }
+    20% {
+        clip: rect(20%, 100%, 20%, 0);
+    }
+    30% {
+        clip: rect(30%, 100%, 30%, 0);
+    }
+    40% {
+        clip: rect(40%, 100%, 40%, 0);
+    }
+    50% {
+        clip: rect(50%, 100%, 50%, 0);
+    }
+    60% {
+        clip: rect(60%, 100%, 60%, 0);
+    }
+    70% {
+        clip: rect(70%, 100%, 70%, 0);
+    }
+    80% {
+        clip: rect(80%, 100%, 80%, 0);
+    }
+    90% {
+        clip: rect(90%, 100%, 90%, 0);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
     font-family: "Silkscreen", sans-serif;
-    padding:100px ;
+    padding: 100px;
     color: rgb(187, 248, 152);
     font-size: 20px;
-    text-shadow: 1px 1px 2px rgb(150, 167, 124),0 0 1em rgb(150, 167, 124) ,0 0 0.2em rgb(150, 167, 124);
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124), 0 0 0.2em rgb(150, 167, 124);
 }
-a{
+
+a {
     text-decoration: none;
-    color:rgb(187, 248, 152); 
-    text-shadow: 1px 1px 2px rgb(150, 167, 124),0 0 1em rgb(150, 167, 124) ,0 0 0.2em rgb(150, 167, 124);
+    color: rgb(187, 248, 152);
+    text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124), 0 0 0.2em rgb(150, 167, 124);
 }
-fieldset{
+
+fieldset {
     color: greenyellow;
 }
