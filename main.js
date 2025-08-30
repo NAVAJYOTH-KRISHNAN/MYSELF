@@ -11,11 +11,11 @@ let projects = [
   },
 
   {
-    name: "RETROLEARN V2(COMING SOON)",
+    name: "RETROLEARN V2 (COMING SOON)",
     url: "https://sites.google.com/view/comingsoonnkd/home",
   },
   {
-    name: "AROUND APP(COMING SOON)",
+    name: "AROUND APP (COMING SOON)",
     url: "https://sites.google.com/view/comingsoonnkd/home",
   },
 ];
